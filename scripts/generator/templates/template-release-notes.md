@@ -15,28 +15,6 @@ Vaadin also provides [commercial support and warranty](https://vaadin.com/suppor
 
 Here are the highlighted new and improved features in Vaadin 14. To see the full list of bug fixes and improvements, check Included Projects and Change Log.
 
-### npm support
-Using Bower for frontend dependencies is currently discouraged (by the author), and npm has become the defacto standard. In Vaadin 14 npm is used as the front-end package manager. Bower (compatibility mode) and WebJars are still fully supported in Vaadin 14. Using npm is the recommended mode in Vaadin 14.
-
-### Framework
-- Support for npm and ES6 modules
-- Support for Polymer 3 templates
-- Adding @PreserveOnRefresh on a router layout or route will preserve the user-edited component state when the user refreshes the page by reusing the component instances
-- Embedding Flow application is now possible by exporting it as a web component.
-- When executing JavaScript from the server-side Java, it is possible to get the return value of the execution to the server-side using Page.executeJs(String expression, Serializable... parameters)
-- It is possible to obtain details like screen width & height and time zone on the server-side using Page.retrieveExtendedClientDetails( ExtendedClientDetailsReceiver receiver)
-- Simplified styling of application and component with @CssImport
-
-### Components
-- Grid rows drag and drop
-- Grid columns auto-width
-- Customise value representation for Grid Pro
-- Menubar component added
-- App Layout with drawer
-- Clear button visibility APIs
-- Dropdown select value change without opening
-- New theme variants for Notification
-
 {{changesSincePrevious}}
 
 ## Included Projects and Change Log
@@ -99,7 +77,7 @@ Add the following dependency to dependencyManagement in pom.xml.
 ```
 
 ### Note
-If you are using any pre-release version of Flow 2.0 / Vaadin 14 in your project, remove the following files and directories when updating to 14.X:
+If you are using any pre-release version of Flow 2.X / Vaadin 14 in your project, remove the following files and directories when updating to 14.X:
 - webpack-config.js
 - package.json
 - package-lock.json
@@ -182,7 +160,7 @@ Migration guide available in [vaadin.com/docs](https://vaadin.com/docs/v14/flow/
 # Known Issues and Limitations
 
 ## OSGi support
-- OSGi with npm does not work in V14.0.0-V14.1.0. We are working on a fix for V14.x.
+- OSGi with npm does not work in V14.0.0-V14.1.X. We are working on a fix for V14.x.
 - OSGi with Bower has problems with V14.0.0-V14.1.0
 
 
